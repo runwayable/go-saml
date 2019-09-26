@@ -1,13 +1,11 @@
 go-saml
-======
-
-[![Build Status](https://travis-ci.org/RobotsAndPencils/go-saml.svg?branch=master)](https://travis-ci.org/RobotsAndPencils/go-saml)
+=====
 
 A just good enough SAML client library written in Go. This library is by no means complete and has been developed
 to solve several specific integration efforts. However, it's a start, and it would be great to see
 it evolve into a more fleshed out implemention.
 
-Inspired by the early work of [Matt Baird](https://github.com/mattbaird/gosaml).
+A fork of the go-saml library by [Robots & Pencils](github.com/RobotsAndPencils/go-saml), which was inspired by the early work of [Matt Baird](https://github.com/mattbaird/gosaml).
 
 The library supports:
 
@@ -21,7 +19,7 @@ The library supports:
 Installation
 ------------
 
-    $ go get github.com/RobotsAndPencils/go-saml
+    $ go get github.com/runwayable/go-saml
 
 Here's a convenient way to generate a certificate:
 
@@ -194,16 +192,6 @@ b64XML, err := authnResponse.EncodedSignedString("/path/to/private.key")
 
 Would love any contributions you having including better documentation, tests, or more robust functionality.
 
-    git clone git@github.com:RobotsAndPencils/go-saml.git
+    git clone git@github.com:runwayable/go-saml.git
     make init
     make test
-
-### Contact
-
-[![Robots & Pencils Logo](http://f.cl.ly/items/2W3n1r2R0j2p2b3n3j3c/rnplogo.png)](http://www.robotsandpencils.com)
-
-Made with :heart: by Robots & Pencils ([@robotsNpencils](https://twitter.com/robotsNpencils))
-
-#### Maintainers
-
-- [Mike Brevoort](http://github.com/mbrevoort) ([@mbrevoort](https://twitter.com/mbrevoort))
